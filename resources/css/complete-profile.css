@@ -1,0 +1,187 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.seller-form-container {
+    padding-top: 80px; /* Untuk menghindari navbar */
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Styling */
+.seller-form-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 90%;
+    max-width: 1000px;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+/* Header Styling */
+.seller-form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.seller-form-header h1 {
+    color: #1a2b50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.seller-form-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Form Layout */
+.seller-form-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+/* Profile Picture Section */
+.profile-picture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-picture-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.add-picture-btn {
+    background-color: transparent;
+    border: 2px solid #003366;
+    color: #003366;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.add-picture-btn:hover {
+    background-color: #003366;
+    color: white;
+}
+
+/* Form Fields */
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #1a2b50;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Save Button */
+.save-btn {
+    background-color: #003366;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+.save-btn:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 100px;
+    left: 2rem;
+    background-color: #003366;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #004080;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .seller-form-content {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-picture-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .seller-form-card {
+        padding: 1rem;
+    }
+
+    .back-btn {
+        top: 80px;
+        left: 1rem;
+    }
+}

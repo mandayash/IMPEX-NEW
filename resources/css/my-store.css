@@ -1,0 +1,191 @@
+/* Container utama dengan padding untuk navbar */
+.store-container {
+    padding-top: 100px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Header dengan tombol back */
+.back-button {
+    position: fixed;
+    top: 120px;
+    left: 2rem;
+    background-color: #003366;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+/* Judul Store */
+.store-title {
+    font-size: 2.5rem;
+    color: #1a2b50;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Profil toko container */
+.store-profile {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Foto profil toko */
+.store-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.store-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Informasi toko */
+.store-info {
+    flex: 1;
+}
+
+.store-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a2b50;
+    margin-bottom: 0.5rem;
+}
+
+.store-location {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.store-description {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.store-earnings {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1a2b50;
+    font-weight: 500;
+}
+
+.earnings-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #003366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Tombol Edit Profile */
+.edit-profile-btn {
+    background-color: #003366;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+}
+
+/* Section produk */
+.products-section {
+    margin-top: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #1a2b50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.5rem;
+}
+
+/* Grid produk */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card produk */
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 1rem;
+}
+
+.product-name {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #1a2b50;
+}
+
+.product-price {
+    color: #003366;
+    font-weight: 600;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.delete-btn {
+    color: #dc3545;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    color: white;
+    background-color: #0d6efd;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
