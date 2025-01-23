@@ -21,7 +21,7 @@
                     </a>
                 @endif
                 @if (Auth::user()->role === 'buyer')
-                    <a class="nav-link" href="{{ route('buyer.purchases') }}">My Purchases</a>
+                    {{-- <a class="nav-link" href="{{ route('buyer.purchases') }}">My Purchases</a> --}}
                 @endif
                 <div class="dropdown">
                     <button class="nav-link dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown"

@@ -94,6 +94,6 @@ Route::middleware(['auth', 'checkseller'])->group(function () {
 
 });
 
-Route::middleware(['auth'])->group(function () {
+// Route::middleware(['auth'])->group(function () {
     Route::get('/transaction', [TransaksiController::class, 'index'])->name('transaction');
-});
+// });
