@@ -1,5 +1,6 @@
 <!-- resources/views/home/buyer.blade.php -->
 @extends('layouts.app')
+@section('title', 'Home')
 
 @section('content')
     <!-- Hero Section -->
@@ -7,7 +8,7 @@
         <div class="hero-inner">
             <img src="{{ asset('aset/bumi.png') }}" alt="Earth Illustration" class="hero-image">
             <div class="hero-content">
-                <h1><span>Discover</span> and <span>Buy</span> Quality Products</h1>
+                <h1><span>Discover</span> and <span>Buy</span> Best Quality Products</h1>
                 <p>Find the best commodities from trusted sellers across ASEAN. Start exploring our marketplace today!</p>
                 <a href="#products" class="cta-button">Explore Products</a>
             </div>
@@ -15,7 +16,7 @@
     </section>
 
     <div class="container">
-        <h3 class="fw-bold mb-3">Product</h3>
+        <h1 class="fw-bold mb-3">Product</h1>
         <div class="row w-100">
             @foreach ($products as $product)
                 <div class="col-3  p-3 mt-5">
@@ -43,10 +44,14 @@
         </div>
     </div>
 
-    <!-- Commodity Section -->
+    {{-- <!-- Commodity Section -->
     @include('components.commodity-section')
-@endsection
+@endsection --}}
 
 @push('styles')
     @vite(['resources/css/home.css'])
+@endpush
+
+@push('styles')
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 @endpush

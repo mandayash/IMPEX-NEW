@@ -1,6 +1,7 @@
 <!-- resources/views/home/guest.blade.php -->
 @extends('layouts.app')
 @vite('resources/css/home.css')
+@section('title', 'Product Detail | Impex Helper')
 
 
 @section('content')

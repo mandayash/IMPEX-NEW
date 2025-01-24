@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Complete Profile | Impex Helper')
 
 @section('content')
     <a href="{{ url()->previous() }}" class="back-btn position-relative">

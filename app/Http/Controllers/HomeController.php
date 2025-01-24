@@ -28,7 +28,7 @@ class HomeController extends Controller
             ]);
 
             // Ambil products dengan eager loading untuk optimasi
-            $products = Product::latest()->paginate(12);
+            $products = Product::latest()->paginate(48);
 
             // Pengecekan role yang lebih eksplisit
             // if ($user->role === 'seller') {

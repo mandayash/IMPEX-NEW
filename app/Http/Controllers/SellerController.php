@@ -100,7 +100,7 @@ class SellerController extends Controller
         $user = Auth::user()->load('sellerProfile');
         $sellerProfile = $user->sellerProfile;
         // dd($user);
-        $products = $sellerProfile->products()->latest()->paginate(12);
+        $products = $sellerProfile->products()->latest()->paginate(48);
 
         return view('seller.store', [
             'seller' => $sellerProfile,

@@ -1,5 +1,6 @@
 <!-- resources/views/auth/login.blade.php -->
 @extends('layouts.app')
+@section('title', 'Login')
 
 @push('styles')
     @vite(['resources/css/auth/login.css'])

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Create Product | Impex Helper')
 
 @section('content')
 <div class="product-form-container">
@@ -7,17 +8,17 @@
     </a>
 
     <div class="product-header">
-        <h1>Product</h1>
+        <h1>Add Product</h1>
     </div>
 
     <div class="product-form-card">
         <form method="POST" action="{{ route('seller.products.store') }}" enctype="multipart/form-data">
             @csrf
 
-            <!-- Debug info - akan muncul di atas form -->
+            {{-- <!-- Debug info - akan muncul di atas form -->
             <div class="alert alert-info">
                 Form akan di-submit ke: {{ route('seller.products.store') }}
-            </div>
+            </div> --}}
 
             <!-- Photo Product Section -->
             <div class="form-section">
@@ -25,7 +26,7 @@
                 <div class="photo-upload-area" onclick="document.getElementById('image').click()">
                     <input type="file" id="image" name="image" class="d-none" accept="image/*">
                     <div class="photo-upload-icon">+</div>
-                    <div class="photo-upload-text">Add Photo 1:1</div>
+                    <div class="photo-upload-text">Add Photo of Your Product</div>
                 </div>
             </div>
 
@@ -148,4 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+@endpush
+
+@push('styles')
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 @endpush

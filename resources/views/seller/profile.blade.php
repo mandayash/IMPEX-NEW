@@ -1,5 +1,6 @@
 <!-- resources/views/seller/profile.blade.php -->
 @extends('layouts.app')
+@section('title', 'Profile | Impex Helper')
 
 @section('content')
     <div class="container">
@@ -83,4 +84,8 @@
             color: #6c757d;
         }
     </style>
+@endpush
+
+@push('styles')
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 @endpush

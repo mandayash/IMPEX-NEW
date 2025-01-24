@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title', 'Seller Store | Impex Helper')
+
+
 
 @section('content')
     <div class="store-container">
@@ -77,4 +80,8 @@
 @push('styles')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     @vite(['resources/css/my-store.css'])
+@endpush
+
+@push('styles')
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 @endpush

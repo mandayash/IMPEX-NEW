@@ -5,12 +5,13 @@
     @vite(['resources/css/auth/register.css'])
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 @endpush
+@section('title', 'Register')
 
 @section('content')
     <div class="signup-header">
         <button class="signup-back-button" onclick="history.back()">←</button>
         <div class="signup-header-content">
-            <img src="{{ asset('path/to/your/logo.png') }}" alt="Logo" class="signup-logo">
+            <img src="{{ asset('aset/logo.png') }}" alt="Logo" class="signup-logo">
             <h1 class="signup-header-title">Register</h1>
         </div>
     </div>

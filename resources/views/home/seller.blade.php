@@ -1,7 +1,10 @@
 <!-- resources/views/home/seller.blade.php -->
 @extends('layouts.app')
+@section('title', 'Home')
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 @section('content')
+<div class="bg-home">
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-inner">
@@ -17,6 +20,7 @@
             @endif
         </div>
     </div>
+</div>
 </section>
 
 {{-- <!-- Commodity Section -->

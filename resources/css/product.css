@@ -21,9 +21,13 @@
 .product-card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(57, 57, 57, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-card:hover {
@@ -46,6 +50,7 @@
 
 .product-details {
     padding: 1.5rem;
+    flex-grow: 1;
 }
 
 .product-name {
@@ -63,6 +68,8 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 .product-commodity {
