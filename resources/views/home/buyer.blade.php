@@ -1,7 +1,7 @@
 <!-- resources/views/home/buyer.blade.php -->
 @extends('layouts.app')
 @section('title', 'Home')
-
+<div class="bg-home">
 @section('content')
     <!-- Hero Section -->
     <section class="hero">
@@ -43,7 +43,7 @@
             @endforeach
         </div>
     </div>
-
+</div>
     {{-- <!-- Commodity Section -->
     @include('components.commodity-section')
 @endsection --}}

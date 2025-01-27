@@ -2,7 +2,7 @@
 @extends('layouts.app')
 @vite('resources/css/home.css')
 @section('title', 'Home')
-
+<div class="bg-home">
 @section('content')
     <section class="hero">
         <div class="hero-inner">
@@ -16,8 +16,9 @@
         </div>
     </section>
 @endsection
+</div>
 
-<div class="container">
+{{-- <div class="container">
     <h1 class="fw-bold mb-3">Product</h1>
     <div class="row w-100">
         @foreach ($products as $product)
@@ -43,7 +44,7 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> --}}
 
 
 
